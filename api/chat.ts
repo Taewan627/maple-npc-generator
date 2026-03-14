@@ -39,7 +39,7 @@ Context: ${context}
     const ai = new GoogleGenAI({ apiKey });
 
     const chat = ai.chats.create({
-      model: "gemini-2.0-flash-lite",
+      model: "gemini-2.5-flash",
       config: {
         systemInstruction,
         temperature: 0.7 + (traits.neuroticism / 200),
